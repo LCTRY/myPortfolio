@@ -390,7 +390,7 @@ header{
     transform-style: preserve-3d;
 }
 
-.containers:hover .portfolio__container {
+.containers:hover .portfolio__container{
     transform: rotateY(-180deg) scale(1.05);
     box-shadow: 5px 10px 30px #888888;
     padding: 10px;
@@ -490,6 +490,15 @@ header{
     display: flex;
     margin: 10px;
     align-items: center;
+    
+}
+.linkedIn{
+    text-decoration: none;
+}
+
+.linkedIn:visited{
+    text-decoration: none;
+    color: var(--fc-light)
 }
 
 .contact_pic{
@@ -657,8 +666,7 @@ opacity: 1;
         grid-column: 1/2;
         grid-row: 1/2;
     }
-
-
+    
 }
 
 @media (max-width: 800px){
@@ -672,6 +680,9 @@ opacity: 1;
         margin: 5% auto;
         grid-column: 1/2;
         grid-row: 1/2;
+    }
+    .skills_subtitle h3{
+        padding-left: 10px;
     }
 
     .skills__front-container{
