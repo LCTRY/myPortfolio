@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d869fb8e6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="dark_theme">
+        <nav class="nav__container">
+            <ul class="nav__list">
+                <li>
+                    <div class="nav__item">
+                        <a href="#home" id="nav__home" class="active">
+                            <div style="--position: 0;" data-focus class="focus"></div>
+                            <i class="fas fa-home menu__icon"></i>
+                            <p class="menu__text">Home</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav__item">
+                        <a href="#about" id="nav__about">
+                            <i i class="fas fa-address-card menu__icon"></i>
+                            <p class="menu__text">About Me</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav__item">
+                        <a href="#skills" id="nav__skills">
+                            <i class="fas fa-book menu__icon"></i>
+                            <p class="menu__text">Skills</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav__item">
+                        <a href="#portfolio" id="nav__portfolio">
+                            <i class="fas fa-award menu__icon"></i>
+                            <p class="menu__text">Portfolio</p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav__item">
+                        <a href="#contact" id="nav__contact">
+                            <i class="fas fa-envelope menu__icon"></i>
+                            <p class="menu__text">Contact</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <div id="home" class="home__section light_theme">
+            <div class="main__text">
+                <h3 class="home__greeting">Hello, my name is</h3>
+                <h1>Hector Young</h1>
+                <h3 class="home__message">I am a Systems Analyst turned Software Developer</h3>
+                <div>
+                    <a class="links interactive" href="#contact">Contact Me</a>
+                    <button id="home_showResume_btn" class="buttons interactive"> View Resume </button>
+                </div>
+            </div>
+        </div>
+        <div id="resume" class="resume light_theme">
+            <a class="links interactive" href="/data/Hector Young - Resume.pdf" download="Hector Young - Resume.pdf"> Download Resume</a>
+            <button id="resume_exit_btn" class="exit"> X </button>
+            <div class="resume_container">
+                <img src="/data/resume1.PNG" alt="Hector's Resume">
+                <img src="/data/resume2.PNG" alt="Hector's Resume">               
+            </div>
+
+        </div>
+        <div id="about" class="about__section dark_theme">
+            <h2 class="about__title"> About me</h2>
+            <div class="about__content">
+                    <img class="about__img" src="/images/joel-mott-RelLVOkVlXU-unsplash.jpg" alt="aboutme image">
+                    <div class="about__details">
+                        <h3> Education</h3>
+                        <p> Earned a Computer Systems Technology Diploma and graduated with Honors from the Northern Alberta Institue of Technology </p>
+                    </div>
+                    <div class="about__details">
+                        <h3> Experience</h3>
+                        <p> I worked in the Information Technology department with Alberta Blue Cross for 9 years and had roles on the Pharmacy Application and Configuration Management Teams.</p>
+                    </div>
+                    <div class="about__details">
+                        <h3> Personal</h3>
+                        <p> Passionate and highly involved with club hockey as a head coach for the past 5 years and an assistant coach for 7 years.  Created, managed and coached spring hockey teams. </p>
+                    </div>
+            </div>
+        </div>
+        <div id="skills" class="skills__section light_theme">
+            <h2 id="skills_title">Skills</h2>
+                <div class="skills__front-container">
+                    <div class="skills_subtitle">
+                        <h3>Front End</h3>
+                    </div>
+                    <div class="skills__sub-container">
+                        <div id="skills__iconContainer">
+                            <i class="fab fa-html5 skill_pic" style="color: orange;"></i>
+                            HTML5
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fab fa-css3-alt skill_pic" style="color: blue;"></i>
+                            CSS
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fab fa-js skill_pic" style="color: rgb(194, 167, 15);"></i>
+                            Javascript
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fab fa-react skill_pic" style="color: rgb(85, 123, 238);"></i>
+                            React
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="skills__back-container">
+                    <div class="skills_subtitle">
+                        <h3>Back End</h3>
+                    </div>
+                    <div class="skills__sub-container">
+                        <div id="skills__iconContainer">
+                            <i class="fas fa-database skill_pic" style="color: orange;"></i> 
+                            SQL
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fas fa-database skill_pic" style="color: rgb(160, 3, 3);"></i> 
+                            Oracle PLSQL
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fas fa-database skill_pic" style="color: rgb(102, 229, 102);"></i> 
+                            MongoDB
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__other-container">
+                    <div class="skills_subtitle">
+                        <h3>Other skills</h3>
+                    </div>
+                    <div class="skills__sub-container">
+                        <div id="skills__iconContainer">
+                            <i class="fas fa-database skill_pic"></i> 
+                            SmartCVS
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fab fa-github skill_pic" style="color: black;"></i>
+                            Git Hub
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fas fa-database skill_pic" style="color: rgb(160, 3, 3);"></i> 
+                            Oracle Forms
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fas fa-database skill_pic" style="color: rgb(160, 3, 3);"></i> 
+                            Oracle Reports
+                        </div>
+                        <div id="skills__iconContainer">
+                            <i class="fab fa-linux skill_pic" style="color: black;"></i>
+                            Linux OS
+                        </div>
+                        <div id="skills__iconContainer">
+                            <p class="skill_pic" style="color: black; padding-top: 3px;">>_</p> 
+                            Bash Script
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div id="portfolio" class="portfolio__section dark_theme">
+            <h2 class="portfolio_title">Projects / Portfolio</h1>
+            <div class="portfolio__main">
+                <div class="containers">
+                    <div id="portfolio_left" class="portfolio__container">
+                        <div class="portfolio__front">
+                            <div>
+                                <img class="portfolio__front_pic" src="/images/tour1.PNG" alt="Tournament screen shot">
+                                <p>Project: Hockey Tournament Website</p>
+                                <p>Skills: CSS HTML Javascript React</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__back">
+                            <h3>Ice Breakers Tournament</h3>
+                            <p>
+                                Website created for Knights of Columbus, KC Icemen and KC Cougars to show case their winter icebreaker hockey tournament.  This project included functionality for tournament information, registation, tournament schedule, ability to bid on silent auction items, and hockey pictures</p>
+                            </p>
+                            <div class="portfolio__back_container">
+                                <div> <img class="portfolio__back_pic" src="/images/tour2.PNG" alt="Tournament screen shot"></div>
+                                <div> <img class="portfolio__back_pic" src="/images/tour3.PNG" alt="Tournament screen shot"></div>
+                                <div> <img class="portfolio__back_pic" src="/images/tour4.PNG" alt="Tournament screen shot"></div>
+                                <div> <img class="portfolio__back_pic" src="/images/tour5.PNG" alt="Tournament screen shot"></div>
+                            </div>
+                            <a class="links interactive" href="https://github.com/LCTRY/Tournament" target="_blank"> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="containers">
+                    <div id="portfolio_center" class="portfolio__container">
+                        <div class="portfolio__front">
+                            <div>
+                                <img class="portfolio__front_pic" src="/images/stick1.PNG" alt="Sticks screen shot">
+                                <p>Project: Hockey Stick Sales Website</p>
+                                <p>Skills: CSS HTML Javascript React</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__back">
+                            <h3>Hockey Stick Sales</h3>
+                            <p>
+                                Created website to sell hockey sticks.  Functionality was created for customers to favorite different sticks and compare their specs.  Customers can add sticks directly from favorites list or while browsing to a shopping cart. 
+                            </p>
+                            <div class="portfolio__back_container">
+                                <div> <img class="portfolio__back_pic" src="/images/stick2.PNG" alt="Sticks screen shot"></div>
+                                <div> <img class="portfolio__back_pic" src="/images/stick3.PNG" alt="Sticks screen shot"></div>
+                                <div> <img class="portfolio__back_pic" src="/images/stick4.PNG" alt="Sticks screen shot"></div>
+                            </div>
+                            <a class="links interactive" href="https://github.com/LCTRY/HockeySticksShop" target="_blank"> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="containers">
+                    <div id="portfolio_right" class="portfolio__container">
+                        <div class="portfolio__front">
+                            <div>
+                                <img class="portfolio__front_pic" src="/images/Budget1.PNG" alt="budget screen shot">
+                                <p>Project: Budget Tracker</p>
+                                <p>Skills: CSS HTML Javascript</p>
+                            </div>
+                        </div>
+                        <div class="portfolio__back">
+                            <h3>Budget Tracking App</h3>
+                            <p>
+                                Project to create a budget tracking application.  Users can track income and expense in a clear and concise way.   Totals are tracked at the top of the app.  Users can add, edit or delete entries.  Users can sort entries alphabetically, by lowest or highest amounts or by date. 
+                            </p>
+                            <div class="portfolio__back_container">
+                                <div> <img class="portfolio__back_pic" src="/images/Budget2.PNG" alt="budget screen shot"></div>
+                                <div> <img class="portfolio__back_pic" src="/images/Budget3.PNG" alt="budget screen shot"></div>
+                                <div> <img class="portfolio__back_pic" src="/images/Budget4.PNG" alt="budget screen shot"></div>
+                            </div>
+                            <a class="links interactive" href="https://github.com/LCTRY/BudgetTracker" target="_blank"> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="contact__section light_theme">
+                <h2 class="contact__title">Contact Me</h1>
+            <div class="contact__contacts">
+                <div id="contact__phone">
+                    <p><i class="fas fa-mobile-alt contact_pic"></i></p>
+                    <span>Phone: (780)909-8840 </span> 
+                </div>
+                <div id="contact__email">
+                    <p><i class="fas fa-envelope contact_pic"></i></p>
+                    <p>Email: Hectorayoung@gmail.com</p>
+                </div>
+                <div id="contact__linked">
+                    <p><i class="fab fa-linkedin contact_pic"></i></p>
+                    <p>LinkedIn</p>
+                </div>
+                <div id="contact__message">
+                    <p><i class="fas fa-mobile-alt contact_pic"></i></p>
+                    <span>Send a message</span>
+                </div>
+            </div>
+            <div class="contact__messasgeContainer">
+                <form action="">
+                    <h3> Send me a message</h3>
+                    <div class="contact__container">
+                        <input type="text" name="name" class="contact__input" />
+                        <label class="x" for="">Name</label>
+                        <span>Name</span>
+                    </div>
+                    <div class="contact__container">
+                        <input type="phone" name="phone" class="contact__input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="contact__container">
+                        <input type="email" name="Email" class="contact__input" />
+                        <label for="">Email</label>
+                        <span>email</span>
+                    </div>
+                    <div class="contact__container ">
+                        <textarea type="text" name="message" class="contact__input"> </textarea> 
+                        <label class="contact__container-Lable-message" for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="contact__btn buttons interactive">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>my links</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
