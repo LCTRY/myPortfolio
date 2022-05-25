@@ -285,7 +285,7 @@ header{
     align-content: center;
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px 100px 200px;
-    height: 100vh;
+    height: max-content;
 }
 #skills_title{
     margin: 0 auto;
