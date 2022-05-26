@@ -10,7 +10,6 @@ const skills_a = document.getElementById("nav__skills")
 const portfolio_a = document.getElementById("nav__portfolio")
 const contact_a= document.getElementById("nav__contact")
 const allAnchors = [...document.querySelectorAll("a")]
-
 const contact_input_elements = document.querySelectorAll(".contact__input")
 const project_hidden_elements = document.getElementsByClassName('hide')
 const project_shown_elements = document.getElementsByClassName('show')
@@ -79,3 +78,28 @@ contact_input_elements.forEach((inputs) => {
   inputs.addEventListener("blur", blurMessage)
 })
 
+function sendEmail(){
+  const name_ele = document.getElementById("contact__form-name").value
+  const email_ele = document.getElementById("contact__form-email").value
+  const phone_ele = document.getElementById("contact__form-phone").value
+  const message_ele = document.getElementById("contact__form-message").value
+  const confirmation_el = document.getElementById("contact__confirmation")
+
+  Email.send({
+    SecureToken:"6b4aee9c-bec6-4dd1-a8f4-a1f46480df59",
+    To : "youngahector@gmail.com",
+    From : "hectorayoung@gmail.com",
+    Subject : `Portfolio - Message from ${name_ele}`,
+    Body : `Name: ${name_ele} <br/>
+            Phone: ${phone_ele} <br/>
+            Email: ${email_ele} <br/>
+            Message: ${message_ele}
+            `
+}).then(
+  message => alert(message)
+);
+
+confirmation_el.innerHTML = "Message Sent"
+setTimeout(() => {confirmation_el.innerHTML = ""}, 8000);
+document.getElementById("contact__form").reset();
+}

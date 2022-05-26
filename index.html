@@ -291,33 +291,37 @@
                 </div>
             </div>
             <div class="contact__messasgeContainer">
-                <form action="">
-                    <h3> Send me a message</h3>
+                <form id="contact__form" onsubmit="sendEmail(); return false" method="post">
+                    <h3> Send me a message</h3> 
+
                     <div class="contact__container">
-                        <input type="text" name="name" class="contact__input" />
+                        <input id="contact__form-name" type="text" name="Name" class="contact__input" required/>
                         <label class="x" for="">Name</label>
                         <span>Name</span>
                     </div>
                     <div class="contact__container">
-                        <input type="phone" name="phone" class="contact__input" />
+                        <input id="contact__form-phone" type="phone" name="Phone" class="contact__input" required/>
                         <label for="">Phone</label>
                         <span>Phone</span>
                     </div>
                     <div class="contact__container">
-                        <input type="email" name="Email" class="contact__input" />
+                        <input id="contact__form-email" type="email" name="Email" class="contact__input" required/>
                         <label for="">Email</label>
                         <span>email</span>
                     </div>
                     <div class="contact__container ">
-                        <textarea type="text" name="message" class="contact__input"> </textarea> 
+                        <textarea id="contact__form-message" type="text" name="message" class="contact__input"> </textarea> 
                         <label class="contact__container-Lable-message" for="">Message</label>
                         <span>Message</span>
                     </div>
                     <input type="submit" value="Send" class="contact__btn buttons interactive">
+                    <span id="contact__confirmation" class="message"></span>
                 </form>
             </div>
         </div>
     </main>
 </body>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 <script src="index.js"></script>
 </html>

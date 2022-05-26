@@ -5,6 +5,7 @@
     --clr-light: #F8F5F2;
     --fc-light: #D70026;
     --clr-accent: rgb(86, 252, 86);
+    --fc-message: red;
 
     --sz_icon: 1.2rem;
     --focus_spacing: calc(var(--sz_icon) / 3);
@@ -607,6 +608,11 @@ opacity: 1;
 }
 /* misc */
 
+.message{
+    color: red;
+    font-size: var(--fs_h3);
+}
+
 .buttons,
 .links{
     padding: 5px 20px;
@@ -632,7 +638,6 @@ opacity: 1;
 .interactive:hover{
     transform: scale(1.1);
 }
-
 
 @media (max-width: 600px){
 /* nav  max-width: 376px*/
