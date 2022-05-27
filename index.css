@@ -683,6 +683,59 @@ opacity: 1;
 .interactive:hover{
     transform: scale(1.1);
 }
+@media (max-width: 800px){
+    /* skills section max-width: 800px*/
+    .skills__section{
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 250px 150px 280px;
+        height: auto;
+    }
+    #skills_title{
+        margin: 5% auto;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .skills_subtitle h3{
+        padding-left: 10px;
+    }
+
+    .skills__front-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: left;
+    }
+
+    .skills__back-container{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: left;
+    }
+    .skills__other-container{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        text-align: left;
+    }
+
+    .skills__sub-container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+/* project max-width: 800px* */
+    .containers {
+        width: 60%;
+        height: 600px;
+    }
+
+ /* contact section max-width: 800px*/
+    .contact__section{
+        height: auto;
+        display: block;
+    }
+}
+
 
 @media (max-width: 600px){
 /* header  max-width: 600px*/
@@ -741,56 +794,4 @@ opacity: 1;
     }
 }
 
-@media (max-width: 800px){
-    /* skills section max-width: 800px*/
-    .skills__section{
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 250px 150px 280px;
-        height: auto;
-    }
-    #skills_title{
-        margin: 5% auto;
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .skills_subtitle h3{
-        padding-left: 10px;
-    }
-
-    .skills__front-container{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        text-align: left;
-    }
-
-    .skills__back-container{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        text-align: left;
-    }
-    .skills__other-container{
-        grid-column: 1/2;
-        grid-row: 4/5;
-        text-align: left;
-    }
-
-    .skills__sub-container{
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-    }
-/* project max-width: 800px* */
-    .containers {
-        width: 60%;
-        height: 600px;
-    }
-
- /* contact section max-width: 800px*/
-    .contact__section{
-        height: auto;
-        display: block;
-    }
-}
 
