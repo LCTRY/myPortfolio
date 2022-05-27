@@ -18,14 +18,18 @@ const resume_exit_btn = document.getElementById("resume_exit_btn")
 const exit_left_btn = document.getElementById("exit_portfolio_left")
 const exit_center_btn = document.getElementById("exit_portfolio_center")
 const exit_right_btn = document.getElementById("exit_portfolio_right")
-const show_resume_btn= document.getElementById("home_showResume_btn") 
+const header_show_resume_btn= document.getElementById("header_showResume_btn") 
+const home_show_resume_btn= document.getElementById("home_showResume_btn") 
 const projects_element = document.getElementsByClassName("portfolio__container")
 const portfolio_left_element =  document.getElementById("portfolio_left")
 const portfolio_center_element =  document.getElementById("portfolio_center")
 const portfolio_right_element =  document.getElementById("portfolio_right")
 const resume_element = document.getElementById("resume")
 
-show_resume_btn.addEventListener("click", function(){
+header_show_resume_btn.addEventListener("click", function(){
+  resume_element.classList.add("open");
+})
+home_show_resume_btn.addEventListener("click", function(){
   resume_element.classList.add("open");
 })
 resume_exit_btn.addEventListener("click", function(){

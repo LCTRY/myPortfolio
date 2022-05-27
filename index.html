@@ -13,6 +13,9 @@
 </head>
 <body>
     <header class="dark_theme">
+        <div class="header__name">
+           <h3>Hector Young</h3> 
+        </div>
         <nav class="nav__container">
             <ul class="nav__list">
                 <li>
@@ -58,6 +61,9 @@
                 </li>
             </ul>
         </nav>
+        <div class="header__resume">
+            <button id="header_showResume_btn" class="buttons interactive"> View Resume </button>
+        </div>
     </header>
     <main class="content">
         <div id="home" class="home__section light_theme">
@@ -81,7 +87,7 @@
 
         </div>
         <div id="about" class="about__section dark_theme">
-            <h2 class="about__title"> About me</h2>
+            <h2 class="about__title"> About Me</h2>
             <div class="about__content">
                     <img class="about__img" src="./images/joel-mott-RelLVOkVlXU-unsplash.jpg" alt="aboutme image">
                     <div class="about__details">
@@ -180,17 +186,17 @@
             <h2 class="portfolio_title">Projects / Portfolio</h1>
             <div class="portfolio__main">
                 <div class="containers">
-                    <div class="portfolio__container">
+                    <div class="portfolio__container" onclick="this.classList.toggle('flip');">
                         <div class="portfolio__front">
                             <div>
                                 <img class="portfolio__front_pic" src="./images/tour1.PNG" alt="Tournament screen shot">
-                                <p>Project: Hockey Tournament Website</p>
-                                <p>Skills: CSS HTML Javascript React</p>
+                                <p class="portfolio__details"><span>Project:</span> Hockey Tournament Website</p>
+                                <p class="portfolio__details"><span>Skills:</span> CSS HTML Javascript React</p>
                             </div>
                         </div>
                         <div class="portfolio__back">
                             <h3>Ice Breakers Tournament</h3>
-                            <p>
+                            <p class="portfolio__details">
                                 Website created for Knights of Columbus, KC Icemen and KC Cougars to show case their winter icebreaker hockey tournament.  This project included functionality for tournament information, registation, tournament schedule, ability to bid on silent auction items, and hockey pictures</p>
                             </p>
                             <div class="portfolio__back_container">
@@ -204,17 +210,17 @@
                     </div>
                 </div>
                 <div class="containers">
-                    <div class="portfolio__container">
+                    <div class="portfolio__container" onclick="this.classList.toggle('flip');">
                         <div class="portfolio__front">
                             <div>
                                 <img class="portfolio__front_pic" src="./images/stick1.PNG" alt="Sticks screen shot">
-                                <p>Project: Hockey Stick Sales Website</p>
-                                <p>Skills: CSS HTML Javascript React</p>
+                                <p class="portfolio__details"><span>Project:</span> Hockey Stick Sales Website</p>
+                                <p class="portfolio__details"><span>Skills:</span> CSS HTML Javascript React</p>
                             </div>
                         </div>
                         <div class="portfolio__back">
                             <h3>Hockey Stick Sales</h3>
-                            <p>
+                            <p class="portfolio__details">
                                 Created website to sell hockey sticks.  Functionality was created for customers to favorite different sticks and compare their specs.  Customers can add sticks directly from favorites list or while browsing to a shopping cart. 
                             </p>
                             <div class="portfolio__back_container">
@@ -227,17 +233,17 @@
                     </div>
                 </div>
                 <div class="containers">
-                    <div class="portfolio__container">
+                    <div class="portfolio__container" onclick="this.classList.toggle('flip');">
                         <div class="portfolio__front">
                             <div>
                                 <img class="portfolio__front_pic" src="./images/Budget1.PNG" alt="budget screen shot">
-                                <p>Project: Budget Tracker</p>
-                                <p>Skills: CSS HTML Javascript</p>
+                                <p class="portfolio__details"> <span>Project:</span> Budget Tracker</p>
+                                <p class="portfolio__details"> <span>Skills:</span> CSS HTML Javascript</p>
                             </div>
                         </div>
                         <div class="portfolio__back">
                             <h3>Budget Tracking App</h3>
-                            <p>
+                            <p class="portfolio__details">
                                 Project to create a budget tracking application.  Users can track income and expense in a clear and concise way.   Totals are tracked at the top of the app.  Users can add, edit or delete entries.  Users can sort entries alphabetically, by lowest or highest amounts or by date. 
                             </p>
                             <div class="portfolio__back_container">
@@ -250,17 +256,17 @@
                     </div>
                 </div>
                 <div class="containers">
-                    <div class="portfolio__container">
+                    <div class="portfolio__container" onclick="this.classList.toggle('flip');">
                         <div class="portfolio__front">
                             <div>
                                 <img class="portfolio__front_pic" src="./images/myPortfolio1.png" alt="myPortfolio screen shot">
-                                <p>Project: portfolio - source code</p>
-                                <p>Skills: CSS HTML Javascript</p>
+                                <p class="portfolio__details"><span>Project: </span> portfolio - source code</p>
+                                <p class="portfolio__details"><span>Skills: </span> CSS HTML Javascript</p>
                             </div>
                         </div>
                         <div class="portfolio__back">
                             <h3>My portfolio - source code</h3>
-                            <p>
+                            <p class="portfolio__details">
                                 Project to create my personal portfolio website.  
                             </p>
                             <a class="links interactive" href="https://github.com/LCTRY/myPortfolio" target="_blank"> View Code</a>
