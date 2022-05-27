@@ -100,10 +100,15 @@ function sendEmail(){
             Message: ${message_ele}
             `
 }).then(
-  message => alert(message)
+  message => {if (message === "OK") {
+    confirmation_el.innerHTML = "Message Sent"
+    setTimeout(() => {confirmation_el.innerHTML = ""}, 8000);
+    document.getElementById("contact__form").reset();
+  } else {
+    alert(message)
+  }
+  }
 );
 
-confirmation_el.innerHTML = "Message Sent"
-setTimeout(() => {confirmation_el.innerHTML = ""}, 8000);
-document.getElementById("contact__form").reset();
+
 }
