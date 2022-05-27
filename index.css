@@ -65,6 +65,8 @@ header{
     z-index: 100;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px;
+    border-bottom: #6a6a6a solid 2px;
 }
 
 .header__name{
@@ -72,6 +74,7 @@ header{
     align-items: center;
     padding-left: 10px;
     grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .header__resume{
@@ -80,6 +83,7 @@ header{
     justify-content: right;
     padding-right: 10px;
     grid-column: 3/4;
+    grid-row: 1/2;
 }
 
 /* nav */
@@ -92,6 +96,7 @@ header{
     width: max-content;
     margin: 0 auto;
     grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 .nav__container ul{
@@ -395,7 +400,7 @@ header{
     margin: 5%;
     width: 40%;
     min-width: 350px;
-    height: 550px;
+    height: 620px;
     border-radius: 15px;
     background-color: var(--clr-dark);
     color:var(--fc-dark);
@@ -777,10 +782,10 @@ opacity: 1;
         align-items: center;
     }
 /* project max-width: 800px* */
-.containers {
-    width: 80%;
-    height: 600px;
-}
+    .containers {
+        width: 60%;
+        height: 600px;
+    }
 
  /* contact section max-width: 800px*/
     .contact__section{
