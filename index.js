@@ -25,6 +25,7 @@ const portfolio_left_element =  document.getElementById("portfolio_left")
 const portfolio_center_element =  document.getElementById("portfolio_center")
 const portfolio_right_element =  document.getElementById("portfolio_right")
 const resume_element = document.getElementById("resume")
+const resume_container_element = document.getElementById("resume_container")
 
 header_show_resume_btn.addEventListener("click", function(){
   resume_element.classList.add("open");
@@ -37,10 +38,11 @@ resume_exit_btn.addEventListener("click", function(){
 })
 
 window.addEventListener('mouseup', function(e){
-  if (e.target !== resume_element) {
+  if (e.target !== resume_container_element) {
     resume_element.classList.remove("open");
   }
 })
+
 
 window.addEventListener("scroll", function (){
   let scroll = window.scrollY + 10;

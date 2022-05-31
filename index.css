@@ -231,7 +231,7 @@ header{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 100%;
+    width: 70%;
     height: max-content;
     border: var(--clr-dark) solid 3px;
     padding: 15px;
@@ -723,6 +723,11 @@ opacity: 1;
         justify-content: center;
         align-items: center;
     }
+    .resume.open{
+        width: 100%;
+    }
+    
+
 /* project max-width: 800px* */
     .containers {
         width: 60%;
